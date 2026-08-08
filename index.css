@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kings&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+:root {
+    --blue: #002F6C;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    color: var(--blue);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Eagle Lake';
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    min-height: 40rem;
+    background-image: url(./background.webp);
+    background-repeat: no-repeat;
+    text-align: center;
+    font-weight: bolder;
+}
+
+header div {
+    font-size: 5rem;
+}
+
+main {
+    text-align: center;
+}
+
+main h2 {
+    margin: 5rem 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+section>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section p, section h3 {
+    margin: 0.5rem 0 0;
+    max-width: 15rem;
+}
+
+.ImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+article {
+    display: flex;
+    gap: 0.5rem;
+    margin: 5rem 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    max-width: 26.75rem;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.CardImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 2px solid var(--white);
+    border-radius: 0.7rem;
+    overflow: hidden;
+    width: 8rem;
+}
+
+.CardImageContainer img {
+    object-fit: cover;
+}
+
+.CardDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CardDescription h2, .CardDescription p {
+    margin: 0;
+}
+
+.FunFact {
+    margin: 0.5rem;
+    max-width: 26.75rem;
+    font-style: italic;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.Rights {
+    margin: 5rem 0.5rem 2rem;
+    text-align: center;
+}
+
+@media (min-width: 400px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    .FunFact {
+        font-size: 1rem;
+    }
+
+    .ImageContainer {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    section p, section h3 {
+        max-width: 20rem;
+    }
+}
+
+@media (min-width: 480px) {
+    article {
+        margin: 5rem auto 0;
+    }
+
+    article h2 {
+        font-size: 4rem;
+    }
+
+    .FunFact {
+        margin: 0.5rem auto;
+    }
+}
+
+@media (min-width: 640px) {
+    header {
+        max-width: 40rem;
+        margin: 2rem auto 5rem;
+        border-radius: 2rem;
+    }
+}
